@@ -1,0 +1,1 @@
+Various contests on codeforces, atcoder, leetcode, codechef, and other platforms. Consists of both live and virtuals
