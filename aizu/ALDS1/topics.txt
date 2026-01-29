@@ -1,0 +1,17 @@
+15 TOPICS
+
+1. Getting Started
+2. Sort I
+3. Elementary data structures
+4. Search
+5. Recursion / Divide and Conquer
+6. Sort II
+7. Tree
+8. Binary search trees
+9. Heaps
+10. Dynamic Programming
+11. Graph I
+12. Graph II
+13. Heuristic Search
+14. String Search
+15. Greedy Algorithms
