@@ -1,0 +1,13 @@
+The topics from youkn0wwho's sheet :
+
+1. Basics -
+2. DS
+3. Graph Theory
+4. Number Theory
+5. Combinatorics
+6. Math
+7. Strings
+8. DP
+9. Game Theory
+10. Geometry
+11. Miscellaneous
