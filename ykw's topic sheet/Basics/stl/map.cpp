@@ -1,5 +1,7 @@
 /* template, gen info
 
+map - O(log n) wc
+
 std::map <key_type, data_type>
 
 map<string,int>m; -> declaration
@@ -12,7 +14,9 @@ m.erase(val); -> erase val
 
 map<string,int>::iterator itr=m.find(val); -> find val
 
-itr==m.end() -> find if not key val*/
+itr==m.end() -> find if not key val
+
+m.count() -> count*/
 
 // 1. MAPS 
 
@@ -93,3 +97,21 @@ int main() {
 		}
 		cout << sum << "\n";
 	}
+
+// 4. Registration system
+
+	ll n;
+	cin >> n;
+	map<string, ll> mp;
+	for(ll i = 0; i < n; i++) {
+		string s;
+		cin >> s;
+		if(mp.count(s) == 0)
+		cout << "OK" << "\n";
+		else
+		cout << s << mp[s] << "\n";
+		mp[s]++;
+	}
+
+
+
