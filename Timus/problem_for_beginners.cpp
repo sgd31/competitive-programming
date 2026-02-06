@@ -1,3 +1,12 @@
+/* general -
+
+	#include <iostream>
+	using namespace std;
+
+	int main() {
+	return 0;
+	} */
+
 //1. a + b problem
 
 int a, b;
