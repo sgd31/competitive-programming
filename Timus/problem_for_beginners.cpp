@@ -6,7 +6,7 @@ cout << a + b << "\n";
 
 //2. reverse root
 
-vector<long long> a;
+	vector<long long> a;
 	long long x;
 	while(cin >> x){
 		a.push_back(x);
@@ -15,3 +15,9 @@ vector<long long> a;
 		double res = sqrt(a[i]);
 		cout << fixed << setprecision(4) << res << "\n";
 	}
+
+//3. two gangsters
+
+	int h, l;
+	cin >> h >> l;
+	cout << l - 1 << " "<< h - 1 << "\n";
