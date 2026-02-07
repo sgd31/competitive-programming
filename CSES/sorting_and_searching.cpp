@@ -40,3 +40,33 @@ int main() {
       		s.erase(it);
       	}	
       }
+
+//3. double ended priority queue
+
+	int n, q; 
+	cin >> n >> q;
+	multiset<ll> m;
+	for(int i = 0; i < n; i++) {
+		ll x;
+		cin >> x;
+		m.insert(x);
+	}
+	while(q--) {
+		int t;
+		cin >> t;
+		if(t == 0) {
+			ll x;
+			cin >> x;
+			m.insert(x);	
+		}
+		else if(t == 1) {
+			auto it = m.begin();
+			cout << *it << "\n";
+			m.erase(it);
+		}
+		else if(t == 2) {
+			auto it = prev(m.end());
+			cout << *it << "\n";
+			m.erase(it);
+		}	
+	}
