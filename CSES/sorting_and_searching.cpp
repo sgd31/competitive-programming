@@ -17,3 +17,28 @@ int main() {
 	cout << s.size();
     return 0;
 }
+
+//2. concert tickets
+
+      ll n, m;
+      cin >> n >> m;
+      multiset<ll> s;
+      
+      for(ll i = 0; i < n; i++) {
+      	ll h;
+      	cin >> h;
+      	s.insert(h);
+      }
+      
+      while(m--) {
+      	ll t;
+      	cin >> t;
+      	auto it = s.upper_bound(t);
+      	if(it == s.begin())
+      	cout << -1 << "\n";
+      	else {
+      		it--;
+      		cout << *it << "\n";
+      		s.erase(it);
+      	}	
+      }
