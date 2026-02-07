@@ -23,13 +23,11 @@ int main() {
       ll n, m;
       cin >> n >> m;
       multiset<ll> s;
-      
       for(ll i = 0; i < n; i++) {
       	ll h;
       	cin >> h;
       	s.insert(h);
       }
-      
       while(m--) {
       	ll t;
       	cin >> t;
