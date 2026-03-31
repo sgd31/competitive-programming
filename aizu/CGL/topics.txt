@@ -1,9 +1,0 @@
-7 TOPICS
-
-1. Points/Vectors
-2. Segments/Lines
-3. Polygon
-4. Convex Polygon
-5. Point Set
-6. Segment Set
-7. Circles

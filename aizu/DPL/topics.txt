@@ -1,7 +1,0 @@
-5 TOPICS
-
-1. Combinatorial
-2. Permutation/Path
-3. Pattern
-4. Counting
-5. Twelvefold Way
