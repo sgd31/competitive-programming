@@ -1,5 +1,4 @@
 //Sereja and Dima
-
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
@@ -34,9 +33,7 @@ int main() {
 	return 0;
 }
 
-
 //Night at the Museum
-
 string s;
 	cin >> s;
 	int ans = 0;
@@ -49,9 +46,7 @@ string s;
 	}
 	cout << ans << '\n';
 
-
 //Petya and Strings
-
 string s, t;
 	cin >> s >> t;
 	int n = 0;
@@ -71,7 +66,6 @@ string s, t;
 
 
 //Boy or Girl
-
 string s;
 	cin >> s;
 	set<char> distinct(s.begin(), s.end());
@@ -82,7 +76,6 @@ string s;
 
 
 //Anton and Letters
-
 string s;
 	getline(cin, s);
 	set<char> distinct;
@@ -92,9 +85,7 @@ string s;
 	}
 	cout << distinct.size();
 
-
 //Word
-
 string s;
 	cin >> s;
 	int cnt = 0;
@@ -110,9 +101,7 @@ string s;
 	}
 	cout << s;
 
-
 //Magnets
-
 int t;
 	cin >> t;
 	string prev, curr;
@@ -126,9 +115,7 @@ int t;
 	}
 	cout << groups;
 
-
 //Stones on the Table
-
 int t;
 	cin >> t;
 	string s;
@@ -140,9 +127,7 @@ int t;
 	}
 	cout << count;
 
-
 //Police Recruits
-
 int t;
 	cin >> t;
 	int sum = 0, ans = 0;
@@ -159,5 +144,23 @@ int t;
 		sum += n;	
 	}
 	cout << ans;
+
+//Black Square
+int a1, a2, a3, a4;
+	cin >> a1 >> a2 >> a3 >> a4;
+	string s;
+	cin >> s;
+	int sum = 0;
+	for(int i = 0; i < s.size(); i++) {
+		if(s[i] == '1')
+		sum += a1;
+		if(s[i] == '2')
+		sum += a2;
+		if(s[i] == '3')
+		sum += a3;
+		if(s[i] == '4')
+		sum += a4;
+	}
+	cout << sum << '\n';
 
 //
