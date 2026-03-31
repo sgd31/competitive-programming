@@ -8,14 +8,12 @@
 	return 0;
 	} */
 
-//1. a + b problem
-
+//a + b problem
 int a, b;
 cin >> a >> b;
 cout << a + b << "\n";
 
-//2. reverse root
-
+//reverse root
 	vector<long long> a;
 	long long x;
 	while(cin >> x){
@@ -26,7 +24,7 @@ cout << a + b << "\n";
 		cout << fixed << setprecision(4) << res << "\n";
 	}
 
-//3. two gangsters
+//two gangsters
 
 	int h, l;
 	cin >> h >> l;
