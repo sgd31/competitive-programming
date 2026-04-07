@@ -163,4 +163,55 @@ int a1, a2, a3, a4;
 	}
 	cout << sum << '\n';
 
-//
+//Carrot Cakes
+int n, t, k, d;
+	cin >> n >> t >> k >> d;
+	int g = (n + k - 1) / k;
+	int t1 = 0, t2 = d;
+	for(int i = 0; i < g; ++i) {
+		if(t1 <= t2)
+		t1 += t;
+		else
+		t2 += t;
+	}
+	if(max(t1, t2) < g * t)
+	cout << "YES\n";
+	else
+	cout << "NO\n";
+
+//Helpful Maths
+	string s;
+	cin >> s;
+	vector<char> v;
+	for(char c : s) {
+		if(c != '+')
+		v.push_back(c);		
+	}
+	sort(v.begin(), v.end());
+	for(int i = 0; i < v.size(); ++i) {
+		if(i > 0) {
+			cout << '+';
+		}
+		cout << v[i];
+	}
+
+//Free Ice Cream
+	int n, x;
+	cin >> n >> x;
+	long long sum = x, child = 0; //initializing sum as x
+	for(int i = 0; i < n; ++i) {
+		char ch;
+		int d;
+		cin >> ch >> d;
+		if(ch == '+')
+		sum += d;
+		else if(ch == '-') {
+			if(sum >= d)
+			sum -= d;
+			else
+			++child;
+		}
+	}
+	cout << sum << " " << child;
+
+//Team Olympiad
