@@ -91,6 +91,7 @@ cout << "May 29, 2013 Wednesday\n";
     cout << (n + 1) * x - (sum);
 
 ***
+	
 //III. Selection Only
 
 //1. Kattis- moscowdream
@@ -142,5 +143,139 @@ cout << "May 29, 2013 Wednesday\n";
 
 //7. Kattis- temperature
 
+***
+//IV. Multiple Test Cases + Selection
 
+//1. Kattis- oddities
+	int t;
+    cin >> t;
+    while(t--) {
+        int n;
+        cin >> n;
+        if(n % 2 == 0)
+        cout << n << " is even\n";
+        else
+        cout << n << " is odd\n";
+    }
 
+//2. UVa 11172
+	int t;
+	cin >> t;
+	while(t--) {
+		int a, b;
+		cin >> a >> b;
+		if(a > b)
+		cout << ">\n";
+		else if(a < b)
+		cout << "<\n";
+		else if(a == b)
+		cout << "=\n";
+	}
+
+//3. UVa 12250
+	string s, l;
+	int count = 0;
+	while(cin >> s) {
+		if(s == "HELLO")
+		l = "ENGLISH";
+		else if(s == "HOLA")
+		l = "SPANISH";
+		else if(s == "HALLO")
+		l = "GERMAN";
+		else if(s == "BONJOUR")
+		l = "FRENCH";
+		else if(s == "CIAO")
+		l = "ITALIAN";
+		else if(s == "ZDRAVSTVUJTE")
+		l = "RUSSIAN";
+		else if(s == "#") {
+			break;
+		}
+		else
+		l = "UNKNOWN";
+		count++;
+		cout << "Case " << count << ": " << l << '\n';
+
+//4. UVa 12372
+
+//5. Kattis- eligibility
+
+//6. Kattis- helpaphd
+
+//7. Kattis- leftbeehind
+
+***
+
+//V. Control Flow
+
+//1. Kattis- statistics
+	int n, m;
+    int x = 1;
+    while(cin >> n) {
+        int mn = INT_MAX;
+        int mx = INT_MIN;
+        for(int i = 0; i < n; i++) {
+            cin >> m;
+            if(m > mx)
+            mx = m;
+            if(m < mn)
+            mn = m;
+        }
+        cout << "Case " << x << ": " << mn << " " << mx << " " << mx - mn << '\n';
+        x++;
+    }
+
+//2. UVa 11764
+	int T;
+	cin >> T;
+	int x = 1;
+	while(T--) {
+		int N;
+		cin >> N;
+		int a[N];
+		for(int i = 0; i < N; i++) {
+			cin >> a[i];
+		}
+		int h = 0, l = 0;
+		for(int i = 0; i < N - 1; i++) { //boundary check
+			if(a[i] < a[i + 1])
+			h++;
+			if(a[i] > a[i + 1])
+			l++;
+		}
+		cout << "Case " << x << ": " << h << " " << l << '\n';
+		x++;
+	}
+
+//3. UVa 11799
+
+//4. UVa 12279
+
+//5. Kattis- fizzbuzz
+
+//6. Kattis- licensetolaunch
+
+//7. Kattis- oddgnome
+
+***
+
+//VI. Function
+
+//1. Kattis- mia
+int convertScore(int i0, int i1) {
+	if((i0 == 1 && i1 == 2) || (i0 == 2 && i1 == 1)) return 1000;
+	else if(i0 == i1) return 100 + i0;
+	else return max(i0, i1) * 10 + min(i0, i1);
+}
+
+int main() {
+	int s0, s1, r0, r1, score1, score2;
+	while(true) {
+		cin >> s0 >> s1 >> r0 >> r1;
+		if(s0 == 0 && s1 == 0 && r0 == 0 && r1 == 0) break;
+		score1 = convertScore(s0, s1);
+		score2 = convertScore(r0, r1);
+		if(score1 > score2) cout << "Player 1 wins.\n";
+		else if(score2 > score1) cout << "Player 2 wins.\n";
+		else cout << "Tie.\n";
+	}
