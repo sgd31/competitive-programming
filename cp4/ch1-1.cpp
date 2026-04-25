@@ -37,7 +37,7 @@ cout << "May 29, 2013 Wednesday\n";
 
 ***
 
-##//II. Repetition Only
+//II. Repetition Only
 
 //1. Kattis- timeloop
 	int n;
@@ -93,6 +93,54 @@ cout << "May 29, 2013 Wednesday\n";
 ***
 //III. Selection Only
 
+//1. Kattis- moscowdream
+	int a, b, c, n; 
+    cin >> a >> b >> c >> n;
+    cout << ((a >= 1 && b >= 1 && c >= 1 && a+b+c >= n && n >= 3) ? "YES\n" : "NO\n");
+
+//2. Kattis- isithalloween
+	string s;
+    int d;
+    cin >> s >> d;
+    cout << (((s == "OCT" && d == 31) || (s == "DEC" && d == 25)) ? "yup" : "nope");
+
+//3. Kattis- judgingmoose
+	int l, r;
+    cin >> l >> r;
+    if(l == 0 && r == 0)
+    cout << "Not a moose";
+    else if(l == r)
+    cout << "Even " << 2 * l;
+    else
+    cout << "Odd " << 2 * max(l, r);
+
+//4. Kattis- onechicken
+	int n, m;
+    cin >> n >> m;
+    if(n > m && n - m != 1)
+    cout << "Dr. Chaz needs " << n - m << " more pieces of chicken!" << '\n';
+    else if(n - m == 1)
+    cout << "Dr. Chaz needs 1 more piece of chicken!" << '\n';
+    else if(n < m && m - n != 1)
+    cout << "Dr. Chaz will have " << m - n << " pieces of chicken left over!" << '\n';
+    else if(m - n == 1)
+    cout << "Dr. Chaz will have 1 piece of chicken left over!" << '\n';
+
+//5. Kattis- provincesandgold
+
+//6. Kattis- quadrant 
+	int x, y; 
+	cin >> x >> y; 
+	if(x>0 && y>0) 
+	cout << "1"; 
+	if(x<0 && y>0) 
+	cout << "2"; 
+	if(x<0 && y<0) 
+	cout << "3"; 
+	if(x>0 && y<0) 
+	cout << "4";
+
+//7. Kattis- temperature
 
 
 
